@@ -1,0 +1,375 @@
+:root {
+    --color-primary1: #1c1d3c;
+    --color-primary2: #89734c;
+    --color-text1: #333;
+    --color-white: #fff;
+    --color-footer: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--color-primary1);
+    height: 7rem;
+}
+
+header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-white);
+    gap: 6rem;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* Top-left */
+
+header .top .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header .top .left .logo-txt h1 {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+header .top .left .logo-img img {
+    width: 4.7rem;
+    height: 4.7rem;
+    cursor: pointer;
+}
+
+
+/* Top- Mid */
+
+header .top .mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .top .mid .title h1 {
+    font-size: 1.5rem;
+    cursor: text;
+}
+
+
+
+
+
+/* Top-right */
+
+header .top .right .login-btn button {
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 1.8rem;
+    background: var(--color-primary2);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+header .top .right .login-btn button:hover {
+    background: var(--color-primary1);
+    border: 0.1rem solid #fff;
+}
+
+
+header .top, .mid, .left{
+    position: relative;
+}
+
+
+/* Navigation bar */
+
+nav {
+    width: 100%;
+    height: 4rem;
+    background: var(--color-primary2);
+
+}
+
+nav .nav-el {
+    width: 100%;
+    height: 100%;
+}
+
+
+nav .nav-el ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav .nav-el ul li a {
+    color: #fff;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 200ms ease;
+}
+
+nav .nav-el ul li a:hover {
+    background: var(--color-primary1);
+}
+
+
+/* Main Section */
+
+main {
+    width: 100%;
+}
+
+
+main .hero-sec {
+    background: url(images/hero.jpg);
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .hero-sec p {
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: var(--color-primary1);
+    backdrop-filter: blur(10px);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+main .content-el {
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content-el .content {
+    box-shadow: 0 1rem 3rem var(--color-primary1);
+    margin: 10%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+
+
+main .content-el .content .txt p {
+    font-size: 1.8rem;
+}
+
+main .content-el .content .content-btn {
+    border: none;
+    display: flex;
+    gap: 7rem;
+    margin-top: 1rem;
+}
+
+main .content-el .content .content-btn button {
+    border: none;
+    background: var(--color-primary1);
+    color: var(--color-white);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+main .content-el .content .content-btn button:hover {
+    color: #c1c3d6;
+}
+
+
+
+/* Counter */
+
+main .counter {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .counter h1 {
+    color: #060950;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main .counter span {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background: var(--color-primary1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .footer-el ul {
+    list-style: none;
+    color: var(--color-white);
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+
+footer .footer-el ul li a {
+    color: var(--color-white);
+    font-size: 0.9rem;
+}
+
+footer .footer-el h2 {
+    color: var(--color-white);
+    font-family: sans-serif;
+}
+
+
+footer .footer-el ul li a:hover {
+    color: #c1c3d6;
+}
+
+
+/* Copyright */
+
+
+.container .copyright {
+    width: 100%;
+    height: 2rem;
+    background: var(--color-primary1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 2rem;
+}
+
+.container .copyright .terms,
+.copy {
+    display: flex;
+    gap: 1rem;
+}
+
+.container .copyright a {
+    cursor: pointer;
+    color: #fff;
+}
+
+.container .copyright a:hover {
+    color: #c1c3d6;
+}
+
+
+/* =================  MEDIA QUERIES =============== */
+
+@media  (max-width: 768px) {
+    
+    
+header .top .left .logo-img img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: block;
+}
+
+header .top {
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+header .top, .mid, .left,.right {
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+header .top .left .logo-txt h1 {
+    font-size: 1rem;
+}
+
+
+header .top .mid {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .top .mid .title h1 {
+    font-size: 1rem;
+    cursor: text;
+}
+
+
+
+
+
+
+}
